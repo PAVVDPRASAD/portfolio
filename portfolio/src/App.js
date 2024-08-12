@@ -9,29 +9,21 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-    return ( <
-        Router className = "App" >
-        <
-        Header / >
-        <
-        Routes >
-        <
-        Route path = "/"
-        element = { < Hero / > }
-        /> <
-        Route path = "/about"
-        element = { < About / > }
-        /> <
-        Route path = "/projects"
-        element = { < Projects / > }
-        /> <
-        Route path = "/contact"
-        element = { < Contact / > }
-        /> <
-        /Routes> <
-        Footer / >
-        <
-        /Router>
+    return ( 
+    <Router className = "App" >
+        <Header />
+        <Routes >
+        <Route path = "/"
+        element = { < Hero /> }
+        /> 
+        <Route path = "/about"
+        element = { < About /> }
+        /> <Route path = "/projects"
+        element = { < Projects /> }
+        /> <Route path = "/contact"
+        element = { < Contact /> }
+        /> </Routes> <Footer />
+    </Router>
     );
 }
 
